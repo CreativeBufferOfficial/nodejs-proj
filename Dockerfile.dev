@@ -1,0 +1,26 @@
+FROM node:12.14.1
+
+WORKDIR /srv/adax_payment_api
+# RUN mkdir -p /srv/adax_payment_api
+
+RUN npm install -g typescript
+RUN npm install -g nodemon
+RUN npm install -g ts-node-dev
+
+COPY package.json /srv/adax_payment_api
+RUN cat /srv/adax_payment_api/package.json
+RUN npm install --silent
+# RUN apk add --no-cache --virtual .build-deps alpine-sdk python \
+#  && npm install --silent \
+#  && apk del .build-deps
+
+# RUN yarn install
+RUN ls 
+RUN pwd
+COPY . /srv/adax_payment_api
+
+ENV NODE_ENV development
+
+CMD ["npm", "run", "start-dev"]
+
+EXPOSE 5000

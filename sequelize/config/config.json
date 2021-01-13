@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "",
+    "database": "adax_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "staging": {
+    "username": "admin",
+    "password": "AyKWf6BPkARjmzUj",
+    "database": "adax_payment_db",
+    "host": "payment-gateway-test.cqymopq3dffb.ap-southeast-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "admin",
+    "password": "Sdfd9378!12456",
+    "database": "adax_payment_db",
+    "host": "xport-production-db.cqymopq3dffb.ap-southeast-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}

@@ -1,0 +1,18 @@
+version: '3'
+services:
+  payment_api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '5000:5000'
+  payment_api_dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - '5000:5000'
+    env_file: .env
+    volumes:
+      - .:/srv/adax_payment_api
+      - /srv/adax_payment_api/node_modules

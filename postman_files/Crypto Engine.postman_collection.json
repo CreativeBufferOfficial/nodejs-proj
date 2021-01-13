@@ -1,0 +1,499 @@
+{
+	"info": {
+		"_postman_id": "055113da-d2d5-4cee-812e-75f8a19a7073",
+		"name": "Crypto Engine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "For Testing only",
+			"item": [
+				{
+					"name": "Crypto purchase cancel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://lhideo3ig6.execute-api.ap-southeast-1.amazonaws.com/dev/api/v1/crypto/purchase-cancel?requestUUID=a21f2335-8856-44a4-b633-4b9ea132850b",
+							"protocol": "https",
+							"host": [
+								"lhideo3ig6",
+								"execute-api",
+								"ap-southeast-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"api",
+								"v1",
+								"crypto",
+								"purchase-cancel"
+							],
+							"query": [
+								{
+									"key": "requestUUID",
+									"value": "a21f2335-8856-44a4-b633-4b9ea132850b"
+								}
+							]
+						},
+						"description": "Should not use directly, Payment Gateway is requesting to this"
+					},
+					"response": []
+				},
+				{
+					"name": "Crypto purchase ready",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://lhideo3ig6.execute-api.ap-southeast-1.amazonaws.com/dev/api/v1/crypto/purchase-ready?requestUUID=a21f2335-8856-44a4-b633-4b9ea132850b",
+							"protocol": "https",
+							"host": [
+								"lhideo3ig6",
+								"execute-api",
+								"ap-southeast-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"api",
+								"v1",
+								"crypto",
+								"purchase-ready"
+							],
+							"query": [
+								{
+									"key": "requestUUID",
+									"value": "a21f2335-8856-44a4-b633-4b9ea132850b"
+								}
+							]
+						},
+						"description": "Should not use directly, Payment Gateway is requesting to this"
+					},
+					"response": []
+				},
+				{
+					"name": "Crypto purchase in process",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://lhideo3ig6.execute-api.ap-southeast-1.amazonaws.com/dev/api/v1/crypto/purchase-inprocess?requestUUID=a21f2335-8856-44a4-b633-4b9ea132850b",
+							"protocol": "https",
+							"host": [
+								"lhideo3ig6",
+								"execute-api",
+								"ap-southeast-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"api",
+								"v1",
+								"crypto",
+								"purchase-inprocess"
+							],
+							"query": [
+								{
+									"key": "requestUUID",
+									"value": "a21f2335-8856-44a4-b633-4b9ea132850b"
+								}
+							]
+						},
+						"description": "Should not use directly, Payment Gateway is requesting to this"
+					},
+					"response": []
+				},
+				{
+					"name": "Crypto purchase completed",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://lhideo3ig6.execute-api.ap-southeast-1.amazonaws.com/dev/api/v1/crypto/purchase-completed?requestUUID=a21f2335-8856-44a4-b633-4b9ea132850b",
+							"protocol": "https",
+							"host": [
+								"lhideo3ig6",
+								"execute-api",
+								"ap-southeast-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"api",
+								"v1",
+								"crypto",
+								"purchase-completed"
+							],
+							"query": [
+								{
+									"key": "requestUUID",
+									"value": "a21f2335-8856-44a4-b633-4b9ea132850b"
+								}
+							]
+						},
+						"description": "Should not use directly, Payment Gateway is requesting to this"
+					},
+					"response": []
+				},
+				{
+					"name": "Get for processing",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "qqqqqq",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://lhideo3ig6.execute-api.ap-southeast-1.amazonaws.com/dev/api/v1/crypto/for-processing?limit=3&isDirect=true",
+							"protocol": "https",
+							"host": [
+								"lhideo3ig6",
+								"execute-api",
+								"ap-southeast-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"api",
+								"v1",
+								"crypto",
+								"for-processing"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "3"
+								},
+								{
+									"key": "isDirect",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Process Transfer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"requestUUID\": \"a73c623a-37ed-484d-afab-c3c23cc7ec3a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://psm7bi1zfb.execute-api.ap-southeast-1.amazonaws.com/dev/api/v1/crypto/transfer",
+							"protocol": "https",
+							"host": [
+								"psm7bi1zfb",
+								"execute-api",
+								"ap-southeast-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"api",
+								"v1",
+								"crypto",
+								"transfer"
+							]
+						},
+						"description": "Should not use directly, Payment Gateway is requesting to this"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Payment Gateway Proxy",
+			"item": [
+				{
+					"name": "Pricing",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://payment-test.xport-digital.com/api/crypto-engine/pricing?symbol=USDT-USD",
+							"protocol": "https",
+							"host": [
+								"payment-test",
+								"xport-digital",
+								"com"
+							],
+							"path": [
+								"api",
+								"crypto-engine",
+								"pricing"
+							],
+							"query": [
+								{
+									"key": "symbol",
+									"value": "USDT-USD"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://payment-test.xport-digital.com/api/crypto-engine/status?requestUUID=62e9efd1-5ae0-490f-9279-80c31d57cb70",
+							"protocol": "https",
+							"host": [
+								"payment-test",
+								"xport-digital",
+								"com"
+							],
+							"path": [
+								"api",
+								"crypto-engine",
+								"status"
+							],
+							"query": [
+								{
+									"key": "requestUUID",
+									"value": "62e9efd1-5ae0-490f-9279-80c31d57cb70"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Quote",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"requestUUID\": \"ae811b88-22e4-4a93-847e-e18e5fdcbbaf\",\n    \"email\": \"test3@xport.com\",\n    \"amount\": 100,\n    \"walletAddress\": \"0x7bbafE4C3C3CC17e9e6E65E4B62f557D0707D60e\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://payment-test.xport-digital.com/api/crypto-engine/quote",
+							"protocol": "https",
+							"host": [
+								"payment-test",
+								"xport-digital",
+								"com"
+							],
+							"path": [
+								"api",
+								"crypto-engine",
+								"quote"
+							]
+						},
+						"description": "Should not use directly, Payment Gateway is requesting to this"
+					},
+					"response": []
+				},
+				{
+					"name": "payment transaction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"amount\": 10000,\n  \"company_uuid\": \"2f64e543-xxxx-41d1-8f9e-999f1770a8c3\",\n  \"first_name\": \"John\",\n  \"last_name\": \"Doe\",\n  \"email\": \"test3@xport.com\",\n  \"address_ip\": \"127.0.0.1\",\n  \"currency\": \"USD\",\n  \"card_number\": \"4024007196427933\",\n  \"expiry_date\": \"12/22\",\n  \"cvc2\": \"123\",\n  \"auto_clear\": true,\n  \"transaction_status\": \"true\",\n  \"request_uuid\": \"f57332ac-9a5f-4b0e-a042-cf58df3e9e99\",\n  \"redirect_url\": \"https://google.com\",\n  \"crypto_transfer\": true,\n  \"kyc_delayed\": true,\n  \"wallet\": \"0x7bbafE4C3C3CC17e9e6E65E4B62f557D0707D60e\"\n}",
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "https://payment-test.xport-digital.com/api/payment/auth",
+							"protocol": "https",
+							"host": [
+								"payment-test",
+								"xport-digital",
+								"com"
+							],
+							"path": [
+								"api",
+								"payment",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Lambda api",
+			"item": [
+				{
+					"name": "Pricing",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://w8gi44xivl.execute-api.ap-southeast-1.amazonaws.com/dev/api/v1/crypto/pricing?symbol=USDT-USD",
+							"protocol": "https",
+							"host": [
+								"w8gi44xivl",
+								"execute-api",
+								"ap-southeast-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"api",
+								"v1",
+								"crypto",
+								"pricing"
+							],
+							"query": [
+								{
+									"key": "symbol",
+									"value": "USDT-USD"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Quote",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"requestUUID\": \"1967ae33-b9e6-40b2-b49d-5713304a18a2\",\n    \"email\": \"test3@xport.com\",\n    \"amount\": 100,\n    \"walletAddress\": \"0x7bbafE4C3C3CC17e9e6E65E4B62f557D0707D60e\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://w8gi44xivl.execute-api.ap-southeast-1.amazonaws.com/dev/api/v1/crypto/quote",
+							"protocol": "https",
+							"host": [
+								"w8gi44xivl",
+								"execute-api",
+								"ap-southeast-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"api",
+								"v1",
+								"crypto",
+								"quote"
+							]
+						},
+						"description": "Should not use directly, Payment Gateway is requesting to this"
+					},
+					"response": []
+				},
+				{
+					"name": "Transfer Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://lhideo3ig6.execute-api.ap-southeast-1.amazonaws.com/dev/api/v1/crypto/status?requestUUID=a73c623a-37ed-484d-afab-c3c23cc7ec3a",
+							"protocol": "https",
+							"host": [
+								"lhideo3ig6",
+								"execute-api",
+								"ap-southeast-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"api",
+								"v1",
+								"crypto",
+								"status"
+							],
+							"query": [
+								{
+									"key": "requestUUID",
+									"value": "a73c623a-37ed-484d-afab-c3c23cc7ec3a"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

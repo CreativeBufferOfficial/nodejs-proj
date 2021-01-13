@@ -1,0 +1,1 @@
+docker-compose up payment_api_dev
